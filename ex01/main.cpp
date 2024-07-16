@@ -3,24 +3,24 @@
 int main()
 {
     ClapTrap dude = ClapTrap();
-    ClapTrap jeff = dude;
-    ClapTrap ken (jeff);
-    ScavTrap scavy = ScavTrap();
+    ClapTrap soso = dude;
+    ClapTrap mec(soso);
+    ScavTrap inconnu = ScavTrap();
 
     dude.attack("greg");
-    jeff.attack("greg");
-    ken.attack("ryu");
-    ken.setAttackDamage(12312);
-    ken.attack("ryu");
-    ken.takeDamage(231321);
-    ken.takeDamage(123312);
-    ken.takeDamage(123123);
-    ken.beRepaired(12312311);
-    ken.beRepaired(213123);
-    ken.takeDamage(123123123);
-    scavy.guardGate();
-    scavy.guardGate();
-    scavy.guardGate();
-    scavy.attack("greg");
+    soso.attack("greg");
+    mec.attack("serge");
+    mec.setAttackDamage(12312);
+    mec.attack("serge");
+    mec.takeDamage(231321);
+    mec.takeDamage(123312);
+    mec.takeDamage(123123);
+    mec.beRepaired(12312311);
+    mec.beRepaired(213123);
+    mec.takeDamage(123123123);
+    inconnu.guardGate();
+    inconnu.guardGate();
+    inconnu.guardGate();
+    inconnu.attack("greg");
     return 0;
 }

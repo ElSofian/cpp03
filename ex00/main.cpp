@@ -3,19 +3,19 @@
 int main(void)
 {
     ClapTrap dude = ClapTrap();
-    ClapTrap jeff = dude;
-    ClapTrap ken (jeff);
+    ClapTrap soso = dude;
+    ClapTrap mec(soso);
 
     dude.attack("greg");
-    jeff.attack("greg");
-    ken.attack("ryu");
-    ken.setAttackDamage(12312);
-    ken.attack("ryu");
-    ken.takeDamage(231321);
-    ken.takeDamage(123312);
-    ken.takeDamage(123123);
-    ken.beRepaired(12312311);
-    ken.beRepaired(213123);
-    ken.takeDamage(123123123);
+    soso.attack("greg");
+    mec.attack("serge");
+    mec.setAttackDamage(12312);
+    mec.attack("serge");
+    mec.takeDamage(231321);
+    mec.takeDamage(123312);
+    mec.takeDamage(123123);
+    mec.beRepaired(12312311);
+    mec.beRepaired(213123);
+    mec.takeDamage(123123123);
     return (0);
 }

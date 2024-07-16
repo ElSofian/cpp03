@@ -3,7 +3,7 @@
 
 NAME		= fragtrap
 CC			= c++
-FLAGS		= -Wall -Wextra -I. -std=c++98 -g3
+FLAGS		= -Wall -Wextra -Werror -I. -std=c++98 -g3
 RM			= rm -rf
 
 OBJS_DIR	= bin

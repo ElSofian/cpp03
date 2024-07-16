@@ -46,13 +46,15 @@ void ClapTrap::takeDamage(unsigned int amount) {
 }
 
 void ClapTrap::attack(std::string const &target) {
-	if (hitPoints == 0)
+	if (getHitPoints() == 0)
 		std::cout << "ClassTrap: " << name << "is dead" << std::endl;
-	else if (energyPoints == 0)
-		std::cout << "ClassTrap: " << name << "has no energy points" << std::endl;
+	else if (getEnergyPoints() == 0)
+		std::cout << "ClassTrap: " << name << " has no energy points" << std::endl;
 	else
+	{
 		std::cout << "ClassTrap: " << getName() << " attacks " << target << ", causing " << getAttackDamage() << " points of damage!" << std::endl;
-	energyPoints -= 1;
+		setEnergyPoints(getEnergyPoints() - 1);
+	}
 }
 
 void ClapTrap::beRepaired(unsigned int amount) {
